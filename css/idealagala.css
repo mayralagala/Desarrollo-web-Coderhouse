@@ -175,7 +175,10 @@ button{
 
 }
 
-
+.card-img-top{
+    width: 20%;
+    height: 20%;
+}
 
 
 .s1a__titulo{
@@ -183,13 +186,13 @@ button{
     height: 80%;
     border: solid black;
     background-color: aliceblue;
-    margin: 5% 20% 5% 20%;
+    margin: 5% 20% 0% 20%;
     text-align: center;
 }
 
 .s1a__titulo h1{
     color: black;
-    font-size: 40px;
+    font-size: 30px;
 
 }
 
@@ -728,6 +731,7 @@ header{
 
 footer{
     background-color: black;
+    margin-top: 6%;
 }
 
 .s1 div{
@@ -750,8 +754,21 @@ footer{
  
  
     }
- 
- 
+
+    .s1h__a h2{
+        font-size: 25px;
+       
+    }
+     h3{
+        font-size: 22px;
+        
+    }
+    .s1h__a, .s1h__b{
+        
+        transform: translateZ(50%);
+        transition-duration: 2s ;
+
+    }
     
  
  
@@ -840,7 +857,7 @@ font-family: 'Redressed', cursive;
    color: black!important;
 }
 
- @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
                 .nav__lista {
                     flex-wrap: wrap;
                     gap: 20px;
