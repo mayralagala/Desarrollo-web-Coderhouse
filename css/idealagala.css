@@ -822,3 +822,70 @@ font-family: 'Redressed', cursive;
     border: 1px solid black;
 
 }
+
+.card{
+    width: 50%;
+    height: 40%;
+    font-size: 12px;
+    margin-left: 25%;
+    margin-top: 10%;
+}         
+
+.s1a__titulo{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.btn-close-sidebar{
+   color: black!important;
+}
+
+ @media screen and (max-width: 600px) {
+                .nav__lista {
+                    flex-wrap: wrap;
+                    gap: 20px;
+                }
+            
+                
+            
+                /* Menu lateral */
+                .btn-open-sidebar {
+                    display: inline-block;
+                    background-color: aliceblue;
+                    border-radius: 5px;
+                    padding: 0.5rem 1rem;
+                    color: aliceblue;
+                }
+            
+                .nav__lista {
+                    background-color: black;
+                    width: 80%;
+                    max-width: 400px;
+                    height: 100vh;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    transform: translateX(-100%);
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 1rem;
+                    padding: 1rem;
+                    transition: transform 0.5s;
+                    z-index: 100;
+                }
+            
+                #sidebar:target {
+                    transform: translateX(0);
+                }
+            
+                .nav__item--oculto {
+                    display: block;
+                }
+            
+                .menu__contenedor {
+                    flex-direction: row;
+                }
+                .btn-close-sidebar{
+                    color: aliceblue;
+                }
+            }
