@@ -1,0 +1,168 @@
+@media screen and (max-width: 1024px) {
+        header, .footer__contenedor{
+            
+            flex-direction: column;
+            background: url(/imagenes/luna2.jpeg);
+            border: 0px;
+        }
+        .sc__contenedor{
+            flex-direction: column;
+        }
+    
+        .sc__h2{
+            position: relative;
+            width: 90%;
+            margin: 1px 5% 5px 5%;
+           
+        }
+        .logo{
+            width: 10%;
+            height: 10%;
+            position: fixed;
+        }
+    
+        .btn-open-sidebar{
+            display: inline-block;
+            border: 1px solid $negro;
+            color: $negro;
+            border-radius: 5px;
+            padding: 0.5rem 1rem;
+        }
+    
+        .menu ul{
+            background-color: $negro;
+            width: 80%;
+            max-width: 400px;
+            height: 100vh;
+            position:fixed;
+            top:0;
+            left: 0;
+            transform: translateX(-100%);
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem;
+            transition: transform 0.5s;
+            z-index: 100;
+        }
+        #sidebar:target{transform: translateX(0);}
+        .nav-enlace{
+            width: 30px;
+            height: 30px;
+            color: red;
+        }
+    
+        
+    }
+    
+    @media screen and (max-width: 600px) {
+        header, .footer__contenedor{
+            
+            flex-direction: column;
+            background: url(/imagenes/luna2.jpeg);
+            border: 0px;
+        }
+        .sc__contenedor{
+            flex-direction: column;
+        }
+        .sc__h2{
+            position: relative;
+            width: 90%;
+            margin: 1px 5% 5px 5%;
+            
+        }
+        .logo{
+            width: 10%;
+            height: 10%;
+            box-shadow: 2px $negro;
+            position: fixed;
+        }
+        .btn-open-sidebar{
+            display: inline-block;
+            border: 1px solid $negro;
+           
+            color: $negro;
+            border-radius: 5px;
+            padding: 0.5rem 1rem;
+        }
+        .menu ul{
+            background-color: $negro;
+            width: 80%;
+            max-width: 400px;
+            height: 100vh;
+            position:fixed;
+            top:0;
+            left: 0;
+            transform: translateX(-100%);
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem;
+            transition: transform 0.5s;
+            z-index: 100;
+        }
+        #sidebar:target{transform: translateX(0);}
+        .nav-enlace{
+            width: 30px;
+            height: 30px;
+            color: red;
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+   
+    
+    @media screen and (max-width: 600px) {
+                    .nav__lista {
+                        flex-wrap: wrap;
+                        gap: 20px;
+                    }
+                
+                    
+                
+                    /* Menu lateral */
+                    .btn-open-sidebar {
+                        display: inline-block;
+                        background-color: $blanco;
+                        border-radius: 5px;
+                        padding: 0.5rem 1rem;
+                        color: $blanco;
+                    }
+                
+                    .nav__lista {
+                        background-color: $negro;
+                        width: 80%;
+                        max-width: 400px;
+                        height: 100vh;
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        transform: translateX(-100%);
+                        flex-direction: column;
+                        justify-content: center;
+                        gap: 1rem;
+                        padding: 1rem;
+                        transition: transform 0.5s;
+                        z-index: 100;
+                    }
+                
+                    #sidebar:target {
+                        transform: translateX(0);
+                    }
+                
+                    .nav__item--oculto {
+                        display: block;
+                    }
+                
+                    .menu__contenedor {
+                        flex-direction: row;
+                    }
+                    .btn-close-sidebar{
+                        color: $blanco;
+                    }
+                }

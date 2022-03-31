@@ -1,0 +1,563 @@
+
+    
+    .s1 div{
+        width: 60%;
+        padding: 5%;
+        margin-top: 5%;
+        margin-left:15%;
+        margin-right: 15%;
+        margin-bottom: 5%;
+        font-size: 25px;
+        text-align: center;
+        border: 3px solid $negro;
+        background: url(/imagenes/1.jpg);
+        
+        color: $blanco;
+        border: solid $blanco;
+    
+    }
+    
+    .s2__1{
+        position: relative;
+        display: flex;
+        flex-direction: horizontal;
+        }
+    
+        .s2__2{
+            position: relative;
+            display: flex;
+            flex-direction: horizontal;
+            }
+        
+    
+    .s2__1 div{
+        
+        
+        
+        width: 12%;
+        height: 12%;
+        margin: 3% 2% 2% 2%;
+        border: 1px solid $negro;
+    
+    
+    }
+    
+    .s2__2 div{
+        
+        
+        
+        width: 12%;
+        height: 12%;
+        margin: 3% 2% 2% 2%;
+        border: 1px solid $negro;
+    
+    
+    }
+    
+    .s2 div img{
+        width: 100%;
+        height: 100%;
+        display: inline;
+        
+    }
+    
+    .s2 div h3{
+        background-color: $blanco;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .s3{
+        border: 2px solid $negro;
+        background-color: $blanco;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
+    }
+    
+   
+    
+    
+    
+   
+    
+    .card-img-top{
+        width: 20%;
+        height: 20%;
+    }
+    
+    
+    .s1a__titulo{
+        width: 60%;
+        height: 80%;
+        border: solid $negro;
+        background-color: $blanco;
+        margin: 5% 20% 0% 20%;
+        text-align: center;
+    
+    
+        & h1{
+        color: $negro;
+        font-size: 30px;}
+    
+    }
+    
+    .s1a__imagen{
+        width: 50%;
+        height: 50%;
+        margin-top: 5%;
+        margin-left: 25%;
+        margin-bottom: 5%;
+        
+    
+    
+    
+        & img{
+        width: 100%;
+        height: 100%;
+        border: 2px solid $negro;}
+        
+    }
+    
+     
+    .s1a__h3 h3{
+        font-size: 12px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        line-height: 20px;
+        background-color: $blanco ;
+        padding: 2%;
+        margin: 5% 10% 5% 10%;
+        border: 1px solid $negro;
+    }
+    
+    .s1h__a{
+        border: 0.5px solid $negro;
+        background-color: $blanco;
+        padding: 3px;
+        height: 60%;
+        width: 60%;
+        text-align: center;
+        margin: 5% 20% 1% 20%;
+       
+    
+       
+    }
+    .s1h__b{
+        border: 0.5px solid $negro;
+        background-color: $blanco;
+        padding: 3px;
+        height: 50%;
+        width: 50%;
+        text-align: center;
+        margin: 1% 25% 5% 25%;
+    
+       
+    }
+   
+    .datos{
+        font-family: Arial, Helvetica, sans-serif;
+        border: 0.5px solid $negro;
+        padding: 0.5%;
+        margin-top: 1%;
+    
+    }
+    
+    .signo{
+        font-family: Arial, Helvetica, sans-serif;
+        border: 0.5px solid $negro;
+        padding: 0.5%;
+        margin-top: 1%;
+    
+    }
+    
+    .s1c__compatibilidad{
+        width: 50%;
+        height: 50%;
+        margin-top: 5%;
+        margin-left: 25%;
+        margin-bottom: 5%;
+        text-align: center;
+        border: 2px solid $negro;
+        background-color: $blanco;
+        font-family: Arial, Helvetica, sans-serif;
+    
+    }
+    
+    .comp div h2{
+        background-color: $blanco;
+        border: 1px solid $negro;
+        text-align: center;
+        margin: 2% 10% 2% 10%;
+        font-family: Arial, Helvetica, sans-serif;
+    
+    }
+    
+    .ubi div{
+        position: relative;
+        display: flex;
+    
+    }
+    
+    .ubi div h4{
+        border: 1px solid $blanco;
+        width: 20%;
+        height: 20%;
+        margin:2% 10% 2% 10%;
+        padding:1%;
+        color: $blanco;
+        background-color: $negro;
+        font-family: Arial, Helvetica, sans-serif;
+    
+    }
+    
+    .ubi img{
+        border: 1px solid $negro;
+        margin: 2% 10% 2% 10%;
+    
+    }
+    
+    .servicios h2{
+        border: solid $negro;
+        background-color: $blanco;
+        margin:5% 25% 5% 25%;
+        width: 50%;
+        height: 50%;
+        text-align: center;
+    
+    }
+    
+    .servicios img{
+        margin:1% 37.5% 5% 37.5%;
+        width: 25%;
+        height: 25%;
+        border: 2px solid $negro;
+    }
+    
+    .servicios div h4{
+        
+        background-color: $blanco;
+        margin:2% 25% 5% 25%;
+        width: 50%;
+        height: 50%;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    
+    }
+    
+    .sc div h2{
+        border: solid $negro;
+        background-color: $blanco;
+        margin:5% 25% 5% 25%;
+        width: 50%;
+        height: 50%;
+        text-align: center;
+    }
+    
+    .sc div img{
+        margin:1% 37.5% 5% 37.5%;
+        width: 25%;
+        height: 25%;
+        border: 2px solid $negro;
+    
+    }
+    
+    .sc div a{
+        background-color: blanco;
+        margin:2% 45% 2% 45%;
+    
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 1px solid $negro;
+    }
+    
+    .video{
+        position: relative;
+        display: flex;
+    
+    
+    & h1{
+        border: 2px solid $blanco;
+        width: 100%;
+        height: 20%;
+        margin-top: 6%;
+        padding: 1%;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: $negro;
+        color: $blanco;
+        font-size: 20px;}
+    
+    
+    & iframe{
+        border: 2px solid $negro;
+        width: 50%;
+        height: 50%;
+        margin: 0 15% 5% 10%;
+        padding: 2px;
+        background-color: $blanco;}
+        
+       
+    
+    }
+    
+    .menu{
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        
+    } 
+    .menu__contenedor{
+        grid-area: menu;
+        width: auto;
+        height: auto;
+    }
+       
+      
+    .nombre{
+        height: 180px;
+        width: 80%;
+        margin: 2% 10% 1% 10%;
+        text-align: center;
+        font-size: 110px;
+    }
+    
+    .logo{
+        width: 11%;
+       height: 14%;
+    
+       position: absolute;
+       top: 70px;
+       left: 12%;
+    
+    
+       border: 2px solid $negro;
+    
+    }
+    
+    .sc{
+        padding: 0 1rem;
+    }
+    .sc__contenedor{
+        max-width: 1200px;
+       
+        margin: 0 auto;
+        margin-bottom: 2px;
+        min-height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        position: relative;
+    
+    
+    
+    
+        & div a{
+        background-color: $blanco;
+        border: 1px solid $blanco;
+        padding: 3px;
+        margin-bottom: 2rem;}
+        
+    
+    
+    }
+    .sc__h2{
+        position: absolute;
+        top: 0;
+        left: 5%;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        height: auto;
+        font-size: 12px;
+        padding: 1.5px;
+        
+    
+    
+    }
+    
+    
+    
+    
+    
+    .sc__facebook, .sc__instagram, .sc__telegram{
+        width: 33.33%;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    .sc__contenedor div img{
+        width: 120px;
+        height: 120px;
+    }
+    
+    .publicidad{
+        padding: 0 1rem;
+    }
+    
+    .publicidad__contenedor{
+        max-width: 1200px;
+       
+        margin: 0 auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+     
+        
+    }
+    
+    .video h1{
+        text-align: center;
+    }
+
+    .s1 div{
+    
+        display: inline-block;
+        vertical-align: middle;
+        border: transparent;
+        position: relative;
+        box-shadow: 0px 0px 1px $negro;}
+     
+        .s1 div:before,
+        .s1 div:after{
+     
+           content: "";
+           position: absolute;
+           width: 100%;
+           height: 8px;
+           left: 0px;
+           opacity: 0;
+     
+     
+        }
+    
+        .s1h__a h2{
+            font-size: 25px;
+           
+        }
+         h3{
+            font-size: 22px;
+            
+        }
+        .s1h__a, .s1h__b{
+            
+            transform: translateZ(50%);
+            transition-duration: 2s ;
+    
+        }
+        
+     
+     
+        .s1 div:before{
+     
+      bottom: 100%;
+      background: radial-gradient(
+        ellipse at 50% 100%,
+        rgba(0,0,0,0.8) 0%,
+        rgba(0,0,0,0) 80%);}
+     
+     
+        .s1 div:after{
+     
+      top: 100%;
+      background: radial-gradient(
+        ellipse at 50% -50%,
+        rgba(0,0,0,0.8) 0%,
+        rgba(0,0,0,0) 80%);}
+     
+        .s1 div:hover:before,
+        .s1 div:hover:after{
+        opacity: 1;
+     
+      }
+    
+      .nombre{
+        font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Redressed', cursive;
+      }
+    
+      .sc__h2 h2{
+          font-size: 18px;
+      }
+    
+      .video iframe{
+          margin-left: 30%;
+    
+      }
+    
+      .row__li li{
+          text-align: center;
+          font-size: 15px;
+          background-color: transparent;
+          margin: 2%;
+          color: $blanco;
+      }
+    
+      .row__li li a{
+        color: $blanco;
+      }
+      .fila1 h3, .fila2 h3{
+          width: 100%;
+          text-align: center;
+          font-size: 15px;
+          border: 1px solid $negro;
+    
+      }
+      .s2__1 div, .s2__2 div{
+          border: 0px transparent;
+      }
+      .fila1 img, .fila2 img{
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        font-size: 15px;
+        border: 1px solid $negro;
+    
+    }
+    
+    .card{
+        width: 50%;
+        height: 40%;
+        font-size: 12px;
+        margin-left: 25%;
+        margin-top: 10%;
+    }         
+    
+    .s1a__titulo{
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    
+    .btn-close-sidebar{
+       color: $negro!important;
+    }
+    h4{position: relative;
+    }
+    h4:before{
+    
+    content: "";
+    position: absolute;
+    border: 4px solid $blanco;
+    top: 4px;
+    bottom: 4px;
+    right: 4px;
+    left: 4px;
+    opacity: 0;
+    transition-duration: 0.3s;
+    
+    }
+    
+    h4:hover:before{
+    
+       opacity: 1;
+    }
+    
