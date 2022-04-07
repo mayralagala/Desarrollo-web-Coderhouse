@@ -1,2 +1,32 @@
+/*variables*/
 $negro: black;
 $blanco: aliceblue;
+/*mapa*/
+$redes: (
+    nombre: 60%,
+    s1h__b:50%,
+    contacto:33.33%);
+@each $clave,$valor in $redes {
+    .#{$clave} {
+        width: $valor;}
+    }
+
+    /*map-get*/
+
+    $signos-index: (
+        width: 12%,
+        height: 12%,
+        margin: 3% 2% 2% 2%);
+
+    /*en componentes, lo uso en .s2__1 div y en .s2__2 div*/
+
+    /*el extend lo ujse en componentes, con .s1c__compatibilidad*/
+    
+
+    @mixin sizes($width,$height){
+        width: $width;
+        height: $height;
+        
+    }
+
+    /*el include lo use en componentes*/

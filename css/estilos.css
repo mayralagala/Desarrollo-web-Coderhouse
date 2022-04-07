@@ -1,3 +1,18 @@
+/*variables*/
+/*mapa*/
+.nombre {
+  width: 60%; }
+
+.s1h__b {
+  width: 50%; }
+
+.contacto {
+  width: 33.33%; }
+
+/*map-get*/
+/*en componentes, lo uso en .s2__1 div y en .s2__2 div*/
+/*el extend lo ujse en componentes, con .s1c__compatibilidad*/
+/*el include lo use en componentes*/
 * {
   margin: 0;
   padding: 0; }
@@ -125,14 +140,14 @@ header {
   width: 20%;
   height: 20%; }
 
-.s1a__titulo {
+.s1a__titulo, .s1c__compatibilidad {
   width: 60%;
   height: 80%;
   border: solid black;
   background-color: aliceblue;
   margin: 5% 20% 0% 20%;
   text-align: center; }
-  .s1a__titulo h1 {
+  .s1a__titulo h1, .s1c__compatibilidad h1 {
     color: black;
     font-size: 30px; }
 
@@ -449,7 +464,7 @@ h3 {
   margin-left: 25%;
   margin-top: 10%; }
 
-.s1a__titulo {
+.s1a__titulo, .s1c__compatibilidad {
   margin-top: 2%;
   margin-bottom: 2%; }
 
@@ -472,6 +487,9 @@ h4:before {
 
 h4:hover:before {
   opacity: 1; }
+
+.s1c__compatibilidad {
+  border: 2px solid pink; }
 
 footer {
   padding: 2rem 1rem; }

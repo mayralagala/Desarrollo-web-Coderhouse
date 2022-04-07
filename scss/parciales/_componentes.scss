@@ -34,9 +34,9 @@
         
         
         
-        width: 12%;
-        height: 12%;
-        margin: 3% 2% 2% 2%;
+        width: map-get($map: $signos-index, $key: width);
+        height: map-get($map: $signos-index, $key: height);
+        margin: map-get($map: $signos-index, $key: margin);
         border: 1px solid $negro;
     
     
@@ -46,9 +46,9 @@
         
         
         
-        width: 12%;
-        height: 12%;
-        margin: 3% 2% 2% 2%;
+        width: map-get($map: $signos-index, $key: width);
+        height: map-get($map: $signos-index, $key: height);
+        margin: map-get($map: $signos-index, $key: margin);
         border: 1px solid $negro;
     
     
@@ -103,6 +103,7 @@
         font-size: 30px;}
     
     }
+   
     
     .s1a__imagen{
         width: 50%;
@@ -395,8 +396,7 @@
     }
     
     .sc__contenedor div img{
-        width: 120px;
-        height: 120px;
+       @include sizes(120px,120px);
     }
     
     .publicidad{
@@ -431,8 +431,7 @@
      
            content: "";
            position: absolute;
-           width: 100%;
-           height: 8px;
+           @include sizes(100%,8px);
            left: 0px;
            opacity: 0;
      
@@ -516,8 +515,7 @@
           border: 0px transparent;
       }
       .fila1 img, .fila2 img{
-        width: 100%;
-        height: 50px;
+          @include sizes (100%,50px);
         text-align: center;
         font-size: 15px;
         border: 1px solid $negro;
@@ -525,8 +523,7 @@
     }
     
     .card{
-        width: 50%;
-        height: 40%;
+        @include sizes(50%,40%);
         font-size: 12px;
         margin-left: 25%;
         margin-top: 10%;
@@ -561,3 +558,8 @@
        opacity: 1;
     }
     
+    .s1c__compatibilidad{
+        @extend .s1a__titulo;
+        border: 2px solid pink;
+        
+    }
