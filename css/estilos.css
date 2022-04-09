@@ -108,14 +108,12 @@ header {
 .s2__1 div {
   width: 12%;
   height: 12%;
-  margin: 3% 2% 2% 2%;
-  border: 1px solid black; }
+  margin: 3% 2% 2% 2%; }
 
 .s2__2 div {
   width: 12%;
   height: 12%;
-  margin: 3% 2% 2% 2%;
-  border: 1px solid black; }
+  margin: 3% 2% 2% 2%; }
 
 .s2 div img {
   width: 100%;
@@ -143,13 +141,14 @@ header {
 .s1a__titulo, .s1c__compatibilidad {
   width: 60%;
   height: 80%;
-  border: solid black;
-  background-color: aliceblue;
+  background-color: transparent;
   margin: 5% 20% 0% 20%;
   text-align: center; }
   .s1a__titulo h1, .s1c__compatibilidad h1 {
-    color: black;
-    font-size: 30px; }
+    color: aliceblue;
+    font-size: 40px;
+    border-left: 1px solid aliceblue;
+    border-right: 1px solid aliceblue; }
 
 .s1a__imagen {
   width: 50%;
@@ -232,7 +231,7 @@ header {
   font-size: 15px; }
 
 .ubi img {
-  border: 1px solid black;
+  border: transparent;
   margin: 2% 10% 2% 10%; }
 
 .servicios h1 {
@@ -458,8 +457,7 @@ p {
   width: 100%;
   height: 50px;
   text-align: center;
-  font-size: 15px;
-  border: 1px solid black; }
+  font-size: 15px; }
 
 .card {
   width: 50%;
@@ -493,14 +491,47 @@ h4:hover:before {
   opacity: 1; }
 
 .s1c__compatibilidad {
-  border: 2px solid pink;
-  background-color: transparent; }
+  background-color: transparent;
+  border-right: 5px solid pink;
+  border-left: 5px solid pink;
+  border-top: transparent;
+  border-bottom: transparent;
+  background-color: transparent;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Redressed', cursive;
+  padding: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-decoration: double; }
 
 .s2__1 div p, .s2__2 div p {
   width: 100%;
   text-align: center;
   font-size: 15px;
   border: 1px solid black; }
+
+.s2__2--signo {
+  border: transparent; }
+
+.sc__h2 h1 {
+  font-size: 30px;
+  margin-top: 3%;
+  color: aliceblue;
+  border: 1px solid aliceblue;
+  padding: 2%; }
+
+.red {
+  width: 30%;
+  color: aliceblue;
+  background-color: black; }
+
+.row div img {
+  border: transparent;
+  margin-top: 2%; }
+
+.row div a {
+  background: transparent;
+  border: none; }
 
 footer {
   padding: 2rem 1rem; }
