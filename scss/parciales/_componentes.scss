@@ -61,7 +61,7 @@
         
     }
     
-    .s2 div h3{
+    .s2 div p{
         background-color: $blanco;
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
@@ -123,7 +123,7 @@
     }
     
      
-    .s1a__h3 h3{
+    .s1a__h3 h2{
         font-size: 12px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         line-height: 20px;
@@ -132,6 +132,7 @@
         margin: 5% 10% 5% 10%;
         border: 1px solid $negro;
     }
+
     
     .s1h__a{
         border: 0.5px solid $negro;
@@ -180,8 +181,6 @@
         margin-left: 25%;
         margin-bottom: 5%;
         text-align: center;
-        border: 2px solid $negro;
-        background-color: $blanco;
         font-family: Arial, Helvetica, sans-serif;
     
     }
@@ -201,15 +200,15 @@
     
     }
     
-    .ubi div h4{
-        border: 1px solid $blanco;
+    .ubi div p{
+        border-left: 1px solid $blanco;
         width: 20%;
         height: 20%;
         margin:2% 10% 2% 10%;
         padding:1%;
         color: $blanco;
-        background-color: $negro;
         font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
     
     }
     
@@ -219,13 +218,14 @@
     
     }
     
-    .servicios h2{
+    .servicios h1{
         border: solid $negro;
         background-color: $blanco;
         margin:5% 25% 5% 25%;
         width: 50%;
         height: 50%;
         text-align: center;
+        font-size: 30px;
     
     }
     
@@ -236,14 +236,18 @@
         border: 2px solid $negro;
     }
     
-    .servicios div h4{
+    .servicios div p{
         
-        background-color: $blanco;
+        background-color: transparent;
         margin:2% 25% 5% 25%;
         width: 50%;
         height: 50%;
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        color: $blanco;
+        border-left: 1px solid $blanco;
+        border-right: 1px solid $blanco;
     
     }
     
@@ -254,6 +258,7 @@
         width: 50%;
         height: 50%;
         text-align: center;
+       
     }
     
     .sc div img{
@@ -438,11 +443,13 @@
      
         }
     
-        .s1h__a h2{
+        .s1h__a h1{
             font-size: 25px;
+            background-color: transparent;
+
            
         }
-         h3{
+         p{
             font-size: 22px;
             
         }
@@ -484,7 +491,7 @@
     font-family: 'Redressed', cursive;
       }
     
-      .sc__h2 h2{
+      .sc__h2 h1{
           font-size: 18px;
       }
     
@@ -504,7 +511,7 @@
       .row__li li a{
         color: $blanco;
       }
-      .fila1 h3, .fila2 h3{
+      .fila1 p, .fila2 p{
           width: 100%;
           text-align: center;
           font-size: 15px;
@@ -561,5 +568,15 @@
     .s1c__compatibilidad{
         @extend .s1a__titulo;
         border: 2px solid pink;
+        background-color: transparent;
         
     }
+
+    .s2__1 div p, .s2__2 div p{
+        width: 100%;
+          text-align: center;
+          font-size: 15px;
+          border: 1px solid $negro;
+    }
+
+    
