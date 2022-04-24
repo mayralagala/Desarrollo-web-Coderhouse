@@ -65,16 +65,21 @@
         background-color: $blanco;
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
+        color: purple;
     }
     
     .s3{
-        border: 2px solid $negro;
-        background-color: $blanco;
-        margin-top: 5%;
-        margin-bottom: 5%;
-        margin-left: 10%;
-        margin-right: 10%;
+        border: purple;
+        background-color: transparent;
+        margin-top: 2%;
+        margin-bottom: 3%;
+        margin-left: 5%;
+        margin-right: 5%;
         text-align: center;
+    }
+
+    .s3 p{
+        color: $blanco;
     }
     
    
@@ -136,8 +141,7 @@
 
     
     .s1h__a{
-        border: 0.5px solid $negro;
-        background-color: $blanco;
+        background-color: transparent;
         padding: 3px;
         height: 60%;
         width: 60%;
@@ -148,8 +152,7 @@
        
     }
     .s1h__b{
-        border: 0.5px solid $negro;
-        background-color: $blanco;
+        background-color: transparent;
         padding: 3px;
         height: 50%;
         width: 50%;
@@ -157,6 +160,13 @@
         margin: 1% 25% 5% 25%;
     
        
+    }
+
+    .s1h__a h1, .s1h__b p{
+        color: $blanco;
+    }
+    legend{
+        color: purple;
     }
    
     .datos{
@@ -586,7 +596,9 @@
         width: 100%;
           text-align: center;
           font-size: 15px;
-          border: 1px solid $negro;
+          border: transparent;
+          color: $blanco;
+          background-color: transparent;
     }
 
     .s2__2--signo{
@@ -619,5 +631,47 @@
 
 
     }
-
     
+    .s1 H1{
+        font-size: 30px;
+    }
+    
+    button{
+            min-width: 130px;
+            height: 40px;
+            color: #fff;
+            padding: 5px 10px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+            outline: none;
+            border-radius: 5px;
+            z-index: 0;
+            background: #fff;
+            overflow: hidden;
+            border: 2px solid purple;
+            color: purple;
+          }
+          button:hover {
+            color: #fff;
+          }
+          button:hover:after {
+            height: 100%;
+          }
+          button:after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            transition: all 0.3s ease;
+            left: 0;
+            top: 0;
+            height: 0;
+            width: 100%;
+            background: purple;
+          }
+    
+          label div fieldset form{
+              color: purple;
+          }

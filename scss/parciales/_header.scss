@@ -21,11 +21,11 @@ header{
     
     color: $blanco;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     margin-left: 20%;
     margin-top: 3%;
     width: 60%;
-    height: 50%; 
+    height: 40%; 
     
 
 }
@@ -38,7 +38,7 @@ li{
     text-align: center;
     padding: 1px;
     margin-top: 2px;
-    margin-bottom: 2px;
+    margin-bottom: 1px;
     background-color: rgb(228, 239, 241);
     font-family: Arial, Helvetica, sans-serif;
     
@@ -48,13 +48,22 @@ li{
 ul{list-style: none;} 
   
 li{
-    padding: 5px;
-    margin: 2px;
+    padding: 3px;
+    margin: 1px;
     color: $negro;
     
 }
 
 header{
-    background-color: $negro;
+    background-color: plum;
 }
 
+.logo{border: transparent;}
+
+.btn-open-sidebar {
+    display: none;
+}
+
+.nav__item--oculto {
+    display: none;
+}

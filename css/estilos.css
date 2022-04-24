@@ -18,7 +18,7 @@
   padding: 0; }
 
 body {
-  background-image: url(/imagenes/luna2.jpeg);
+  background-image: url(/imagenes/fondovioleta.svg);
   background-size: cover;
   font-family: 'PT Sans Narrow', sans-serif;
   font-family: 'Raleway', sans-serif;
@@ -54,11 +54,11 @@ header {
 .nombre {
   color: aliceblue;
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   margin-left: 20%;
   margin-top: 3%;
   width: 60%;
-  height: 50%; }
+  height: 40%; }
 
 li {
   display: inline-block;
@@ -66,7 +66,7 @@ li {
   text-align: center;
   padding: 1px;
   margin-top: 2px;
-  margin-bottom: 2px;
+  margin-bottom: 1px;
   background-color: #e4eff1;
   font-family: Arial, Helvetica, sans-serif; }
 
@@ -74,12 +74,21 @@ ul {
   list-style: none; }
 
 li {
-  padding: 5px;
-  margin: 2px;
+  padding: 3px;
+  margin: 1px;
   color: black; }
 
 header {
-  background-color: black; }
+  background-color: plum; }
+
+.logo {
+  border: transparent; }
+
+.btn-open-sidebar {
+  display: none; }
+
+.nav__item--oculto {
+  display: none; }
 
 .s1 div {
   width: 60%;
@@ -123,16 +132,20 @@ header {
 .s2 div p {
   background-color: aliceblue;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: Arial, Helvetica, sans-serif;
+  color: purple; }
 
 .s3 {
-  border: 2px solid black;
-  background-color: aliceblue;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  margin-left: 10%;
-  margin-right: 10%;
+  border: purple;
+  background-color: transparent;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
   text-align: center; }
+
+.s3 p {
+  color: aliceblue; }
 
 .card-img-top {
   width: 20%;
@@ -171,8 +184,7 @@ header {
   border: 1px solid black; }
 
 .s1h__a {
-  border: 0.5px solid black;
-  background-color: aliceblue;
+  background-color: transparent;
   padding: 3px;
   height: 60%;
   width: 60%;
@@ -180,13 +192,18 @@ header {
   margin: 5% 20% 1% 20%; }
 
 .s1h__b {
-  border: 0.5px solid black;
-  background-color: aliceblue;
+  background-color: transparent;
   padding: 3px;
   height: 50%;
   width: 50%;
   text-align: center;
   margin: 1% 25% 5% 25%; }
+
+.s1h__a h1, .s1h__b p {
+  color: aliceblue; }
+
+legend {
+  color: purple; }
 
 .datos {
   font-family: Arial, Helvetica, sans-serif;
@@ -508,7 +525,9 @@ h4:hover:before {
   width: 100%;
   text-align: center;
   font-size: 15px;
-  border: 1px solid black; }
+  border: transparent;
+  color: aliceblue;
+  background-color: transparent; }
 
 .s2__2--signo {
   border: transparent; }
@@ -533,6 +552,47 @@ h4:hover:before {
   background: transparent;
   border: none; }
 
+.s1 H1 {
+  font-size: 30px; }
+
+button {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid purple;
+  color: purple; }
+
+button:hover {
+  color: #fff; }
+
+button:hover:after {
+  height: 100%; }
+
+button:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 100%;
+  background: purple; }
+
+label div fieldset form {
+  color: purple; }
+
 footer {
   padding: 2rem 1rem; }
 
@@ -546,11 +606,14 @@ footer {
   align-items: center;
   border: 1px solid black; }
 
+.logo {
+  border: transparent; }
+
 .logo2 {
   width: 10%;
   height: 8%;
   position: relative;
-  border: 2px solid black;
+  border: transparent;
   margin-left: 5%; }
 
 .redes img {
@@ -586,7 +649,6 @@ footer {
 @media screen and (max-width: 1024px) {
   header, .footer__contenedor {
     flex-direction: column;
-    background: url(/imagenes/luna2.jpeg);
     border: 0px; }
   .sc__contenedor {
     flex-direction: column; }
@@ -596,93 +658,15 @@ footer {
     margin: 1px 5% 5px 5%; }
   .logo {
     width: 10%;
-    height: 10%;
-    position: fixed; }
-  .btn-open-sidebar {
-    display: inline-block;
-    border: 1px solid black;
-    color: black;
-    border-radius: 5px;
-    padding: 0.5rem 1rem; }
-  .menu ul {
-    background-color: black;
-    width: 80%;
-    max-width: 400px;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translateX(-100%);
-    flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
-    padding: 1rem;
-    transition: transform 0.5s;
-    z-index: 100; }
-  #sidebar:target {
-    transform: translateX(0); }
-  .nav-enlace {
-    width: 30px;
-    height: 30px;
-    color: red; } }
-
-@media screen and (max-width: 600px) {
-  header, .footer__contenedor {
-    flex-direction: column;
-    background: url(/imagenes/luna2.jpeg);
-    border: 0px; }
-  .sc__contenedor {
-    flex-direction: column; }
-  .sc__h2 {
-    position: relative;
-    width: 90%;
-    margin: 1px 5% 5px 5%; }
-  .logo {
-    width: 10%;
-    height: 10%;
-    box-shadow: 2px black;
-    position: fixed; }
-  .btn-open-sidebar {
-    display: inline-block;
-    border: 1px solid black;
-    color: black;
-    border-radius: 5px;
-    padding: 0.5rem 1rem; }
-  .menu ul {
-    background-color: black;
-    width: 80%;
-    max-width: 400px;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translateX(-100%);
-    flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
-    padding: 1rem;
-    transition: transform 0.5s;
-    z-index: 100; }
-  #sidebar:target {
-    transform: translateX(0); }
-  .nav-enlace {
-    width: 30px;
-    height: 30px;
-    color: red; } }
-
-@media screen and (max-width: 600px) {
-  .nav__lista {
-    flex-wrap: wrap;
-    gap: 20px; }
-  /* Menu lateral */
+    height: 10%; }
   .btn-open-sidebar {
     display: inline-block;
     background-color: aliceblue;
     border-radius: 5px;
     padding: 0.5rem 1rem;
-    color: aliceblue; }
-  .nav__lista {
-    background-color: black;
+    color: purple; }
+  ul {
+    background-color: aliceblue;
     width: 80%;
     max-width: 400px;
     height: 100vh;
@@ -702,5 +686,149 @@ footer {
     display: block; }
   .menu__contenedor {
     flex-direction: row; }
-  .btn-close-sidebar {
-    color: aliceblue; } }
+  .nav-enlace {
+    width: 30px;
+    height: 30px;
+    color: red; }
+  .nombre {
+    font-size: 70px;
+    text-align: center; }
+  .header {
+    background-color: plum; }
+  .footer {
+    background-color: black; }
+  .s1 div h1 {
+    font-size: 20px; }
+  .s2__1 div p, .s2__2 div p {
+    font-size: 10px; }
+  .s3 div p {
+    font-size: 15px; }
+  form {
+    height: 17%;
+    background-color: aliceblue; }
+  button {
+    width: 25px;
+    height: 30px;
+    text-align: center; }
+  label div fieldset form {
+    font-size: 2px;
+    text-align: center; }
+  .s1h__a h1, .s1h__b p {
+    font-size: 18px; }
+  legend {
+    font-size: 10px;
+    color: purple; }
+  .card-body p {
+    font-size: 12px; }
+  .s1a__titulo, .s1c__compatibilidad {
+    font-size: 15px; }
+  .servicios h1 {
+    font-size: 20px; }
+  .servicios div p {
+    font-size: 15px; } }
+
+@media screen and (max-width: 600px) {
+  header, .footer__contenedor {
+    flex-direction: column;
+    border: 0px; }
+  .sc__contenedor {
+    flex-direction: column; }
+  .sc__h2 {
+    position: relative;
+    width: 90%;
+    margin: 1px 5% 5px 5%; }
+  .logo {
+    width: 10%;
+    height: 10%;
+    box-shadow: 2px black; }
+  .btn-open-sidebar {
+    display: inline-block;
+    border: 1px solid black;
+    color: black;
+    border-radius: 5px;
+    padding: 0.5rem 1rem; }
+  .menu ul {
+    background-color: black;
+    width: 80%;
+    max-width: 400px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    transition: transform 0.5s;
+    z-index: 100; }
+  #sidebar:target {
+    transform: translateX(0); }
+  .nav-enlace {
+    width: 30px;
+    height: 30px;
+    color: red; }
+  .nav__lista {
+    flex-wrap: wrap;
+    gap: 20px; }
+  /* Menu lateral */
+  .btn-open-sidebar {
+    display: inline-block;
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    color: purple; }
+  ul {
+    background-color: aliceblue;
+    width: 80%;
+    max-width: 400px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    transition: transform 0.5s;
+    z-index: 100; }
+  #sidebar:target {
+    transform: translateX(0); }
+  .nav__item--oculto {
+    display: block; }
+  .menu__contenedor {
+    flex-direction: row; }
+  .nombre {
+    font-size: 45px;
+    text-align: center; }
+  .header {
+    background-color: plum; }
+  .footer {
+    background-color: black; }
+  .s1 div h1 {
+    font-size: 15px; }
+  .s2__1 div p, .s2__2 div p {
+    font-size: 8px; }
+  .s3 div p {
+    font-size: 12px; }
+  form {
+    height: 15%;
+    background-color: aliceblue; }
+  button {
+    width: 25px;
+    height: 30px;
+    text-align: center; }
+  label div fieldset form {
+    font-size: 2px;
+    text-align: center; }
+  .s1h__a h1, .s1h__b p {
+    font-size: 15px; }
+  .card-body p {
+    font-size: 12px; }
+  .s1a__titulo, .s1c__compatibilidad {
+    font-size: 15px; }
+  .servicios h1 {
+    font-size: 17px; }
+  .servicios div p {
+    font-size: 12px; } }

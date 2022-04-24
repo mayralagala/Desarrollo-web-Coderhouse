@@ -14,12 +14,14 @@ footer{
     border: 1px solid $negro;
 
 }
-
+.logo{
+    border: transparent;
+}
 .logo2{
     width: 10%;
     height: 8%;
     position: relative;
-    border: 2px solid $negro;
+    border: transparent;
     margin-left: 5%;
  
 }

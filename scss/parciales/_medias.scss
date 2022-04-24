@@ -2,7 +2,6 @@
         header, .footer__contenedor{
             
             flex-direction: column;
-            background: url(/imagenes/luna2.jpeg);
             border: 0px;
         }
         .sc__contenedor{
@@ -18,24 +17,24 @@
         .logo{
             width: 10%;
             height: 10%;
-            position: fixed;
+           
         }
     
         .btn-open-sidebar{
             display: inline-block;
-            border: 1px solid $negro;
-            color: $negro;
-            border-radius: 5px;
-            padding: 0.5rem 1rem;
+        background-color: $blanco;
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+        color: purple;
         }
     
-        .menu ul{
-            background-color: $negro;
+        ul{
+            background-color: $blanco;
             width: 80%;
             max-width: 400px;
             height: 100vh;
-            position:fixed;
-            top:0;
+            position: fixed;
+            top: 0;
             left: 0;
             transform: translateX(-100%);
             flex-direction: column;
@@ -45,12 +44,82 @@
             transition: transform 0.5s;
             z-index: 100;
         }
-        #sidebar:target{transform: translateX(0);}
+        #sidebar:target{
+            transform: translateX(0);
+        }
+        .nav__item--oculto {
+            display: block;
+        }
+    
+        .menu__contenedor {
+            flex-direction: row;
+        }
+
         .nav-enlace{
             width: 30px;
             height: 30px;
             color: red;
         }
+        .nombre{
+            font-size: 70px;
+            text-align: center;
+        }
+        .header {
+            background-color: plum;
+        }
+        .footer{
+            background-color: black;
+        }
+        .s1 div h1{
+            font-size: 20px;
+
+
+        }
+        .s2__1 div p, .s2__2 div p{
+            font-size: 10px;
+        }
+        .s3 div p{
+            font-size: 15px;
+        }
+
+        form{
+        
+            height: 17%;
+            background-color: $blanco;
+            
+        }
+
+        button{
+            width: 25px;
+            height: 30px;
+            text-align: center;
+        }
+        label div fieldset form{
+            font-size: 2px;
+            text-align: center;
+           
+        }
+        .s1h__a h1, .s1h__b p{
+            font-size: 18px;
+        }
+
+        legend{
+            font-size: 10px;
+            color: purple;
+        }
+        .card-body p{
+            font-size: 12px;
+        }
+        .s1a__titulo{
+            font-size: 15px;
+        }
+        .servicios h1{
+            font-size: 20px;
+        }
+        .servicios div p{
+            font-size: 15px;
+        }
+        
     
         
     }
@@ -59,7 +128,6 @@
         header, .footer__contenedor{
             
             flex-direction: column;
-            background: url(/imagenes/luna2.jpeg);
             border: 0px;
         }
         .sc__contenedor{
@@ -75,7 +143,7 @@
             width: 10%;
             height: 10%;
             box-shadow: 2px $negro;
-            position: fixed;
+            
         }
         .btn-open-sidebar{
             display: inline-block;
@@ -107,18 +175,7 @@
             height: 30px;
             color: red;
         }
-    }
-    
-    
-    
-    
-    
-    
-    
-   
-    
-    @media screen and (max-width: 600px) {
-                    .nav__lista {
+     .nav__lista {
                         flex-wrap: wrap;
                         gap: 20px;
                     }
@@ -126,16 +183,16 @@
                     
                 
                     /* Menu lateral */
-                    .btn-open-sidebar {
+                    .btn-open-sidebar{
                         display: inline-block;
-                        background-color: $blanco;
-                        border-radius: 5px;
-                        padding: 0.5rem 1rem;
-                        color: $blanco;
+                    background-color: $blanco;
+                    border-radius: 5px;
+                    padding: 0.5rem 1rem;
+                    color: purple;
                     }
                 
-                    .nav__lista {
-                        background-color: $negro;
+                    ul{
+                        background-color: $blanco;
                         width: 80%;
                         max-width: 400px;
                         height: 100vh;
@@ -150,11 +207,9 @@
                         transition: transform 0.5s;
                         z-index: 100;
                     }
-                
-                    #sidebar:target {
+                    #sidebar:target{
                         transform: translateX(0);
                     }
-                
                     .nav__item--oculto {
                         display: block;
                     }
@@ -162,7 +217,58 @@
                     .menu__contenedor {
                         flex-direction: row;
                     }
-                    .btn-close-sidebar{
-                        color: $blanco;
+                    .nombre {
+                        font-size: 45px;
+                        text-align: center;
                     }
+                    .header {
+                        background-color: plum;
+                    }
+                    .footer{
+                        background-color: black;
+                    }
+                    .s1 div h1{
+                        font-size: 15px;
+
+
+                    }
+                    .s2__1 div p, .s2__2 div p{
+                        font-size: 8px;
+                    }
+                    .s3 div p{
+                        font-size: 12px;
+                    }
+                    form{
+        
+                        height: 15%;
+                        background-color: $blanco;
+                        
+                    }
+            
+                    button{
+                        width: 25px;
+                        height: 30px;
+                        text-align: center;
+                    }
+                    label div fieldset form{
+                        font-size: 2px;
+                        text-align: center;
+                    }
+                    .s1h__a h1, .s1h__b p{
+                        font-size: 15px;
+                    }
+                    .card-body p{
+                        font-size: 12px;
+                    }
+                    .s1a__titulo{
+                        font-size: 15px;
+                    }
+                    .servicios h1{
+                        font-size: 17px;
+                    }
+                    .servicios div p{
+                        font-size: 12px;
+                    }
+                    
                 }
+                
