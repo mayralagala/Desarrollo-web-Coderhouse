@@ -1,32 +1,12 @@
 header{
-    display: grid;
-    grid-template-columns: 30% auto;
-    grid-template-rows: 60% 40%;
-    grid-template-areas: "logo nombre"
-    "none menu";
-
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
 }
-
-.nombre{
-    grid-area: nombre;
-}
-
-.logo{
-    grid-area: logo;
-}
-
-
-
 .nombre{
     
-    color: $blanco;
-    text-align: center;
-    font-size: 40px;
-    margin-left: 20%;
-    margin-top: 3%;
-    width: 60%;
-    height: 40%; 
-    
+    display: none;
 
 }
 
@@ -58,7 +38,10 @@ header{
     background-color: plum;
 }
 
-.logo{border: transparent;}
+.logo{
+    display: none;
+
+}
 
 .btn-open-sidebar {
     display: none;

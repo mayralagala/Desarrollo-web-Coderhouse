@@ -40,25 +40,12 @@ form {
     font-family: Arial, Helvetica, sans-serif; }
 
 header {
-  display: grid;
-  grid-template-columns: 30% auto;
-  grid-template-rows: 60% 40%;
-  grid-template-areas: "logo nombre" "none menu"; }
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
 .nombre {
-  grid-area: nombre; }
-
-.logo {
-  grid-area: logo; }
-
-.nombre {
-  color: aliceblue;
-  text-align: center;
-  font-size: 40px;
-  margin-left: 20%;
-  margin-top: 3%;
-  width: 60%;
-  height: 40%; }
+  display: none; }
 
 li {
   display: inline-block;
@@ -82,7 +69,7 @@ header {
   background-color: plum; }
 
 .logo {
-  border: transparent; }
+  display: none; }
 
 .btn-open-sidebar {
   display: none; }
@@ -552,8 +539,15 @@ h4:hover:before {
   background: transparent;
   border: none; }
 
+.s1h_form {
+  background-image: url(/imagenes/1.jpg); }
+
+.s1 {
+  margin-left: 8%; }
+
 .s1 H1 {
-  font-size: 30px; }
+  font-size: 70px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
 
 button {
   min-width: 130px;
@@ -650,6 +644,13 @@ footer {
   header, .footer__contenedor {
     flex-direction: column;
     border: 0px; }
+  .fila1, .fila2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .fila1 div, .fila2 div {
+    margin: 3%;
+    width: 20%; }
   .sc__contenedor {
     flex-direction: column; }
   .sc__h2 {
@@ -657,8 +658,7 @@ footer {
     width: 90%;
     margin: 1px 5% 5px 5%; }
   .logo {
-    width: 10%;
-    height: 10%; }
+    display: none; }
   .btn-open-sidebar {
     display: inline-block;
     background-color: aliceblue;
@@ -691,8 +691,7 @@ footer {
     height: 30px;
     color: red; }
   .nombre {
-    font-size: 70px;
-    text-align: center; }
+    display: none; }
   .header {
     background-color: plum; }
   .footer {
@@ -731,6 +730,13 @@ footer {
   header, .footer__contenedor {
     flex-direction: column;
     border: 0px; }
+  .fila1, .fila2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .fila1 div, .fila2 div {
+    margin: 3%;
+    width: 20%; }
   .sc__contenedor {
     flex-direction: column; }
   .sc__h2 {
@@ -738,9 +744,7 @@ footer {
     width: 90%;
     margin: 1px 5% 5px 5%; }
   .logo {
-    width: 10%;
-    height: 10%;
-    box-shadow: 2px black; }
+    display: none; }
   .btn-open-sidebar {
     display: inline-block;
     border: 1px solid black;
@@ -800,8 +804,7 @@ footer {
   .menu__contenedor {
     flex-direction: row; }
   .nombre {
-    font-size: 45px;
-    text-align: center; }
+    display: none; }
   .header {
     background-color: plum; }
   .footer {

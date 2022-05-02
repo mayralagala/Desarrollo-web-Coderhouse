@@ -4,6 +4,19 @@
             flex-direction: column;
             border: 0px;
         }
+        
+        .fila1,.fila2{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+        .fila1 div,.fila2 div{
+            margin: 3%;
+            width: 20%;
+
+
+        }
         .sc__contenedor{
             flex-direction: column;
         }
@@ -15,8 +28,7 @@
            
         }
         .logo{
-            width: 10%;
-            height: 10%;
+           display: none;
            
         }
     
@@ -61,9 +73,9 @@
             color: red;
         }
         .nombre{
-            font-size: 70px;
-            text-align: center;
+            display: none;
         }
+
         .header {
             background-color: plum;
         }
@@ -130,6 +142,19 @@
             flex-direction: column;
             border: 0px;
         }
+        
+        .fila1,.fila2{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+        .fila1 div,.fila2 div{
+            margin: 3%;
+            width: 20%;
+
+
+        }
         .sc__contenedor{
             flex-direction: column;
         }
@@ -140,9 +165,7 @@
             
         }
         .logo{
-            width: 10%;
-            height: 10%;
-            box-shadow: 2px $negro;
+            display: none;
             
         }
         .btn-open-sidebar{
@@ -218,8 +241,7 @@
                         flex-direction: row;
                     }
                     .nombre {
-                        font-size: 45px;
-                        text-align: center;
+                        display: none;
                     }
                     .header {
                         background-color: plum;
